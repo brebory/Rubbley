@@ -14,5 +14,11 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>Rubbley</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.snackpackgames.Rubbley</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.1</string>
 </dict>
 </plist>

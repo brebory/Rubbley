@@ -83,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Content\" />
+    <Folder Include="Content\Sounds\" />
+    <Folder Include="Content\fonts\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -94,6 +97,18 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="RubbleyGame.cs" />
+    <Compile Include="ConfigurationManager.cs" />
+    <Compile Include="GameStartLayer.cs" />
+    <Compile Include="GameLayer.cs" />
+    <Compile Include="VectorMath.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Light Bold Italic.ttf" />
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Light Bold.ttf" />
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Light Italic.ttf" />
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Light.ttf" />
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Roman Bold.ttf" />
+    <BundleResource Include="Content\fonts\Akzidenz Grotesk Roman.ttf" />
+  </ItemGroup>
 </Project>

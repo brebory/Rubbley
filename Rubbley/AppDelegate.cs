@@ -14,6 +14,7 @@ namespace Rubbley
 	{
 		// class-level declarations
 		UIWindow window;
+		RubbleyGame game;
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
 		// method you should instantiate the window, load the UI into it and then make the window
@@ -21,16 +22,19 @@ namespace Rubbley
 		//
 		// You have 17 seconds to return from this method, or iOS will terminate your application.
 		//
-		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
+		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			// create a new window instance based on the screen size
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			window = new UIWindow(UIScreen.MainScreen.Bounds);
 			
 			// If you have defined a root view controller, set it here:
 			// window.RootViewController = myViewController;
 			
 			// make the window visible
-			window.MakeKeyAndVisible ();
+			window.MakeKeyAndVisible();
+
+			game = new RubbleyGame();
+			game.Run();
 			
 			return true;
 		}

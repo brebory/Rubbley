@@ -9,14 +9,16 @@ namespace Rubbley
 	{
 		readonly GraphicsDeviceManager graphics;
 
-		public RubbleyGame ()
+		public RubbleyGame()
 		{
-			graphics = new GraphicsDeviceManager (this);
+			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 			graphics.isFullScreen = false;
 
-			CCApplication application = new RubbleyApplication (this, graphics);
-			Components.Add (application);
+			ConfigurationManager config = new ConfigurationManager();
+
+			CCApplication application = new RubbleyApplication(this, graphics, config);
+			Components.Add(application);
 		}
 	}
 }
